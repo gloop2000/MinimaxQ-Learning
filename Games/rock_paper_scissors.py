@@ -16,7 +16,7 @@ class RockPaperScissors:
 
     def draw(self, P=None):
         P = self.P if P is None else P
-        print P
+        print(P)
 
 if __name__ == '__main__':
     s = soccer()

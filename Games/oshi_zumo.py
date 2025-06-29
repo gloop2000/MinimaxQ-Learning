@@ -52,6 +52,6 @@ if __name__ == '__main__':
     actions = [[1, 2], [2, 1], [3, 1], [2, 4], [1, 2], [1, 0]]
     actions = [[1, 2], [2, 1], [3, 1], [2, 3], [2, 2], [0, 1]]
     for action in actions:
-        print game.play(*action)
+        print(game.play(*action))
         game.draw()
     pass

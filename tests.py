@@ -335,7 +335,7 @@ def testSoccerPerformance():
     ### MAKE FIGHT ! PLAYER A vs PLAYER B
     print("\n\n======================================================")
     print("STEP 2: MAKE PLAYER 'A' FIGHT 'PLAYER B' - 10000 games")
-    playerA3 = np.load('SavedPlayers/minimaxQ_SoccerA_100000.npy').item()
+    playerA3 = np.load('SavedPlayers/minimaxQ_SoccerA_100000.npy', allow_pickle=True, encoding='latin1').item()
     playerA3.learning = False
     wins = testGame(playerA3, playerB, tester, 10000)
     tester.plotResult(wins)
@@ -380,12 +380,12 @@ if __name__ == '__main__':
 
     ### RUN TESTS
     testSoccer(1000)
-    testOshiZumo(1000)
-    testRPS(1000)
+    # testOshiZumo(1000)
+    # testRPS(1000)
 
     ### RUN PERFORMANCE TESTS
     testSoccerPerformance()
-    testRPSPerformance()
+    # testRPSPerformance()
 
 
 

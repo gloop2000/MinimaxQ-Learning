@@ -102,5 +102,5 @@ if __name__ == '__main__':
     actions = [[0, 1], [0, 4], [1, 3], [1, 0], [1, 0]]
     actions = [[0, 4], [0, 4], [0, 4], [1, 4], [0, 4]]
     for action in actions:
-        print s.play(*action)
+        print(s.play(*action))
         s.draw()

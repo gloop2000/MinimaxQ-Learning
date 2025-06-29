@@ -63,7 +63,7 @@ class OZMinimaxQPlayer:
 
 
 def testUpdatePolicy():
-    m = minimaxQPlayer(1, 2, 2, 1e-4, 0.2, 0.9)
+    m = OZMinimaxQPlayer(1, 2, 2, 1e-4, 0.2, 0.9)
     m.Q[0] = [[0, 1], [1, 0.5]]
     m.updatePolicy(0)
     print(m.pi)
